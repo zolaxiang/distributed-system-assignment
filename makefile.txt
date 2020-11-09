@@ -1,0 +1,7 @@
+all: stringServer stringClient
+
+stringServer: stringServer.c
+        gcc -o stringServer stringServer.c
+
+stringClient: stringClient.c
+        gcc -pthread  -o stringClient stringClient.c
